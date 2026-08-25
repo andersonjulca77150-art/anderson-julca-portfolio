@@ -900,7 +900,7 @@ a {
 
 .render-pair {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -938,8 +938,8 @@ a {
 
 .sketch-section {
   display: grid;
-  grid-template-columns: .8fr 1fr 1fr;
-  align-items: center;
+  grid-template-columns: .72fr repeat(3, minmax(0, 1fr));
+  align-items: start;
   gap: 24px;
   margin-top: 90px;
   padding-top: 28px;
@@ -967,11 +967,24 @@ a {
   letter-spacing: .08em;
 }
 
+.sketch-section figure {
+  min-width: 0;
+  margin: 0;
+}
+
 .sketch-section img {
+  display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 420px;
   object-fit: contain;
   background: var(--paper);
+}
+
+.sketch-section figcaption {
+  padding: 12px 2px 10px;
+  border-bottom: 1px solid rgba(13,13,12,.45);
+  font: 700 9px/1.45 "Courier New", monospace;
+  letter-spacing: .1em;
 }
 
 .closing {
@@ -1333,6 +1346,11 @@ footer span:last-child {
 
   .sketch-section {
     grid-template-columns: 1fr;
+  }
+
+  .sketch-section img {
+    height: auto;
+    max-height: none;
   }
 
   .sketch-section h3 {

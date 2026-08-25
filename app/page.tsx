@@ -267,7 +267,7 @@ export default function Home() {
         <div className="characters-heading reveal">
           <p>07 / CHARACTER DESIGN / 3D</p>
           <h2>VOLUMEN<br /><span>Y CARÁCTER</span></h2>
-          <small>MODELADO / TEXTURA / ILUMINACIÓN<br />DOS ESTUDIOS DE PERSONAJE</small>
+          <small>MODELADO / TEXTURA / ILUMINACIÓN<br />TRES ESTUDIOS DE PERSONAJE</small>
         </div>
         <div className="render-pair">
           <figure className="reveal">
@@ -278,6 +278,10 @@ export default function Home() {
             <img src="work/character-everyday.webp" alt="Render 3D del personaje Everyday" />
             <figcaption><span>02</span> EVERYDAY</figcaption>
           </figure>
+          <figure className="reveal">
+            <img src="work/forest-warden-render.jpg" alt="Render 3D del personaje Forest Warden en un bosque" />
+            <figcaption><span>03</span> FOREST WARDEN</figcaption>
+          </figure>
         </div>
         <div className="sketch-section reveal">
           <div>
@@ -285,8 +289,18 @@ export default function Home() {
             <h3>LA FORMA ANTES DEL MATERIAL</h3>
             <span>Proporción / silueta / vestuario / accesorios</span>
           </div>
-          <img src="work/sketch-everyday.webp" alt="Bocetos del personaje Everyday" />
-          <img src="work/sketch-baker.webp" alt="Bocetos del personaje The Baker" />
+          <figure>
+            <img src="work/sketch-baker-2026.jpg" alt="Turnaround actualizado del personaje The Baker" />
+            <figcaption>THE BAKER / TURNAROUND</figcaption>
+          </figure>
+          <figure>
+            <img src="work/sketch-everyday-2026.jpg" alt="Hoja de diseño actualizada del personaje Everyday" />
+            <figcaption>EVERYDAY / CHARACTER SHEET</figcaption>
+          </figure>
+          <figure>
+            <img src="work/forest-warden-concept.jpg" alt="Bocetos conceptuales del personaje Forest Warden" />
+            <figcaption>FOREST WARDEN / CONCEPT SHEET</figcaption>
+          </figure>
         </div>
       </section>
 
