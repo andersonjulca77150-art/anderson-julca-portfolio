@@ -242,7 +242,89 @@ export default function Home() {
               </div>
             </article>
           ))}
+          <article className="project-card nocturne-card reveal">
+            <a className="project-link" href="#nocturne" aria-label="Ver el case study de NOCTURNE">
+              <div className="project-image">
+                <img src="work/nocturne-poster.jpg" alt="NOCTURNE — Editorial Campaign" />
+                <span className="project-view"><Arrow /></span>
+              </div>
+              <div className="project-info">
+                <span>06</span>
+                <div>
+                  <h3>NOCTURNE</h3>
+                  <p>EDITORIAL CAMPAIGN</p>
+                </div>
+                <small>ART DIRECTION / EDITORIAL DESIGN</small>
+              </div>
+            </a>
+          </article>
         </div>
+      </section>
+
+      <section className="nocturne-case section-pad" id="nocturne">
+        <div className="nocturne-heading reveal">
+          <p>PROJECT 06 / EDITORIAL CAMPAIGN</p>
+          <h2>NOCTURNE</h2>
+          <div className="nocturne-summary">
+            <p>Una campaña de moda monocromática construida desde la tensión entre forma, sombra y arquitectura brutalista.</p>
+            <div>
+              <span>CATEGORÍAS</span>
+              <strong>Art Direction<br />Editorial Design<br />Image Making</strong>
+            </div>
+            <div>
+              <span>CRÉDITOS</span>
+              <strong>Anderson Julca<br />Personal Project / 2025<br />AI-assisted visuals</strong>
+            </div>
+          </div>
+        </div>
+
+        <figure className="nocturne-hero reveal">
+          <img src="work/nocturne-poster.jpg" alt="Campaign Poster de NOCTURNE" />
+          <figcaption><span>01</span> CAMPAIGN POSTER / FORM IN SHADOW</figcaption>
+        </figure>
+
+        <div className="nocturne-editorial">
+          <figure className="reveal">
+            <img src="work/nocturne-spread-main.jpg" alt="Main Editorial Spread de NOCTURNE en libro abierto" />
+            <figcaption><span>02</span> MAIN EDITORIAL SPREAD</figcaption>
+          </figure>
+          <figure className="reveal">
+            <img src="work/nocturne-spread-portrait.jpg" alt="Portrait Editorial Spread de NOCTURNE en libro abierto" />
+            <figcaption><span>03</span> PORTRAIT EDITORIAL SPREAD</figcaption>
+          </figure>
+        </div>
+
+        <figure className="nocturne-billboard reveal">
+          <img src="work/nocturne-billboard.jpg" alt="Póster de NOCTURNE aplicado en una valla publicitaria urbana" />
+          <figcaption><span>04</span> OUTDOOR ADVERTISING / BILLBOARD</figcaption>
+        </figure>
+
+        <div className="nocturne-imagery reveal">
+          <div className="nocturne-imagery-heading">
+            <p>05 / SELECTED CAMPAIGN IMAGERY</p>
+            <h3>FORM.<br />SHADOW.<br />STRUCTURE.</h3>
+          </div>
+          <figure>
+            <img src="work/nocturne-image-01.jpg" alt="Retrato editorial monocromático de la campaña NOCTURNE" />
+          </figure>
+          <figure>
+            <img src="work/nocturne-image-02.jpg" alt="Modelo entre arquitectura brutalista para la campaña NOCTURNE" />
+          </figure>
+          <figure>
+            <img src="work/nocturne-image-03.jpg" alt="Retrato editorial con luces y sombras para la campaña NOCTURNE" />
+          </figure>
+        </div>
+
+        <nav className="project-navigation reveal" aria-label="Navegación entre proyectos">
+          <a href="#work">
+            <span>← PROYECTO ANTERIOR</span>
+            <strong>SELECTED WORK</strong>
+          </a>
+          <a href="#web">
+            <span>SIGUIENTE PROYECTO →</span>
+            <strong>MUSEO EN MOVIMIENTO</strong>
+          </a>
+        </nav>
       </section>
 
       <section className="web-case" id="web">
@@ -251,7 +333,7 @@ export default function Home() {
         </div>
         <div className="web-overlay" />
         <div className="web-copy reveal">
-          <p>06 / WEB DESIGN / EXPERIENCE</p>
+          <p>07 / WEB DESIGN / EXPERIENCE</p>
           <h2>MUSEO<br />EN <em>MOVIMIENTO</em></h2>
           <span>REDISEÑO CONCEPTUAL DEL MUSEO DE ARTE DE LIMA</span>
           <a href="https://mali-museo-vivo.andersonj.chatgpt.site" target="_blank" rel="noreferrer">
@@ -266,7 +348,7 @@ export default function Home() {
 
       <section className="characters section-pad" id="three-d">
         <div className="characters-heading reveal">
-          <p>07 / CHARACTER DESIGN / 3D</p>
+          <p>08 / CHARACTER DESIGN / 3D</p>
           <h2>VOLUMEN<br /><span>Y CARÁCTER</span></h2>
           <small>MODELADO / TEXTURA / ILUMINACIÓN<br />TRES ESTUDIOS DE PERSONAJE</small>
         </div>
@@ -307,8 +389,8 @@ export default function Home() {
 
       <section className="interior-case section-pad" id="interior">
         <div className="interior-heading reveal">
-          <p>08 / INTERIOR DESIGN / ARCHVIZ</p>
-          <h2>CALMA<br /><em>HABITADA</em></h2>
+          <p>09 / INTERIOR DESIGN / ARCHVIZ</p>
+          <h2>INTERIOR<br /><em>LIGHT &amp; MATERIAL</em></h2>
           <div>
             <p>Un estudio de interior contemporáneo construido desde la forma, los materiales y la luz.</p>
             <span>MODELADO 3D / MATERIALES / ILUMINACIÓN / RENDER</span>
@@ -359,7 +441,7 @@ export default function Home() {
       </section>
 
       <section className="closing" id="contact">
-        <p className="reveal">09 / CONTACTO</p>
+        <p className="reveal">10 / CONTACTO</p>
         <h2 className="reveal">HAGAMOS<br /><span>ALGO BUENO</span></h2>
         <div className="contact-links reveal">
           <a href="mailto:andersonlbvlk@hotmail.com">
