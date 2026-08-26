@@ -143,6 +143,7 @@ export default function Home() {
           <a href="#work">Trabajo</a>
           <a href="#web">Web</a>
           <a href="#three-d">3D</a>
+          <a href="#interior">Interior</a>
           <a href="#contact">Contacto</a>
         </nav>
         <p>PERÚ / 2026</p>
@@ -304,8 +305,61 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="interior-case section-pad" id="interior">
+        <div className="interior-heading reveal">
+          <p>08 / INTERIOR DESIGN / ARCHVIZ</p>
+          <h2>CALMA<br /><em>HABITADA</em></h2>
+          <div>
+            <p>Un estudio de interior contemporáneo construido desde la forma, los materiales y la luz.</p>
+            <span>MODELADO 3D / MATERIALES / ILUMINACIÓN / RENDER</span>
+          </div>
+        </div>
+
+        <figure className="interior-hero reveal">
+          <img src="work/interior-day-wide.jpg" alt="Sala contemporánea renderizada con iluminación natural" />
+          <figcaption><span>01</span> VISTA GENERAL / DAYLIGHT</figcaption>
+        </figure>
+
+        <div className="interior-process reveal">
+          <figure>
+            <img src="work/interior-clay.jpg" alt="Clay render del modelado de la sala" />
+            <figcaption><span>02</span> FORMA / CLAY RENDER</figcaption>
+          </figure>
+          <figure>
+            <img src="work/interior-day-front.jpg" alt="Vista frontal de la sala con materiales e iluminación cálida" />
+            <figcaption><span>03</span> MATERIAL / LIGHT STUDY</figcaption>
+          </figure>
+        </div>
+
+        <figure className="interior-evening reveal">
+          <img src="work/interior-evening.jpg" alt="Render nocturno de la sala con chimenea e iluminación ambiental" />
+          <figcaption>
+            <span>04 / EVENING SCENE</span>
+            <strong>LA LUZ CAMBIA EL ESPACIO</strong>
+          </figcaption>
+        </figure>
+
+        <div className="interior-film reveal">
+          <div>
+            <p>05 / FULL RENDER</p>
+            <h3>RECORRIDO<br />DEL ESPACIO</h3>
+            <span>Video renderizado / dirección de cámara / atmósfera</span>
+          </div>
+          <video
+            controls
+            playsInline
+            preload="metadata"
+            poster="work/interior-day-wide.jpg"
+            aria-label="Recorrido renderizado del diseño interior"
+          >
+            <source src="work/interior-walkthrough.mp4" type="video/mp4" />
+            Tu navegador no puede reproducir este video.
+          </video>
+        </div>
+      </section>
+
       <section className="closing" id="contact">
-        <p className="reveal">08 / CONTACTO</p>
+        <p className="reveal">09 / CONTACTO</p>
         <h2 className="reveal">HAGAMOS<br /><span>ALGO BUENO</span></h2>
         <div className="contact-links reveal">
           <a href="mailto:andersonlbvlk@hotmail.com">
