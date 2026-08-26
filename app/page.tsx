@@ -302,7 +302,7 @@ export default function Home() {
         <div className="nocturne-imagery reveal">
           <div className="nocturne-imagery-heading">
             <p>05 / SELECTED CAMPAIGN IMAGERY</p>
-            <h3>FORM.<br />SHADOW.<br />STRUCTURE.</h3>
+            <h3>FORM<br />SHADOW<br />STRUCTURE</h3>
           </div>
           <figure>
             <img src="work/nocturne-image-01.jpg" alt="Retrato editorial monocromático de la campaña NOCTURNE" />
