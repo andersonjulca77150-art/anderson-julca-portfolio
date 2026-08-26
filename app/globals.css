@@ -761,15 +761,11 @@ a {
 }
 
 .nocturne-heading {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr);
-  align-items: end;
-  gap: 26px 6vw;
+  display: block;
   padding-bottom: 72px;
 }
 
 .nocturne-heading > p {
-  grid-column: 1 / -1;
   margin: 0;
   color: var(--red);
   font: 700 11px "Courier New", monospace;
@@ -777,30 +773,35 @@ a {
 }
 
 .nocturne-heading h2 {
-  margin: 0;
-  font: 400 clamp(82px, 12vw, 198px)/.72 Georgia, serif;
+  margin: clamp(86px, 10vw, 150px) 0 70px;
+  font: 400 clamp(82px, 11vw, 180px)/.72 Georgia, serif;
   letter-spacing: -.085em;
+  white-space: nowrap;
 }
 
 .nocturne-summary {
-  max-width: 520px;
-  margin-left: auto;
-  padding-top: 20px;
+  display: grid;
+  grid-template-columns: minmax(280px, 1.25fr) minmax(190px, .55fr) minmax(230px, .7fr);
+  gap: 28px;
+  max-width: none;
+  margin: 0;
+  padding-top: 24px;
   border-top: 1px solid rgba(13,13,12,.45);
 }
 
 .nocturne-summary > p {
-  margin: 0 0 32px;
+  max-width: 620px;
+  margin: 0;
+  padding-right: 4vw;
   font-size: 18px;
   line-height: 1.4;
 }
 
 .nocturne-summary > div {
-  display: grid;
-  grid-template-columns: 105px 1fr;
-  gap: 18px;
-  padding: 16px 0;
-  border-top: 1px solid rgba(13,13,12,.18);
+  display: block;
+  padding: 0 0 0 24px;
+  border-top: 0;
+  border-left: 1px solid rgba(13,13,12,.18);
 }
 
 .nocturne-summary span,
@@ -810,6 +811,8 @@ a {
 }
 
 .nocturne-summary span {
+  display: block;
+  margin-bottom: 10px;
   color: var(--red);
 }
 
@@ -1403,14 +1406,21 @@ a {
   position: relative;
   z-index: 2;
   margin: 68px 0 0;
-  font: 900 clamp(82px, 11.5vw, 196px)/.72 "Arial Narrow", Arial, sans-serif;
+  font: 900 clamp(78px, 10.5vw, 176px)/.75 "Arial Narrow", Arial, sans-serif;
   letter-spacing: -.085em;
 }
 
 .closing h2 span {
   display: block;
-  margin-left: 8vw;
+  margin-top: .05em;
+  margin-left: 9vw;
   color: var(--red);
+  font-family: Georgia, serif;
+  font-size: .76em;
+  font-weight: 400;
+  font-style: italic;
+  line-height: .86;
+  letter-spacing: -.075em;
 }
 
 .contact-links {
@@ -1702,21 +1712,28 @@ footer span:last-child {
     aspect-ratio: 4 / 3;
   }
 
-  .nocturne-heading {
-    grid-template-columns: 1fr;
-  }
-
-  .nocturne-heading > p {
-    grid-column: 1;
-  }
-
   .nocturne-heading h2 {
+    margin: 74px 0 48px;
     font-size: clamp(70px, 18vw, 112px);
+    white-space: normal;
   }
 
   .nocturne-summary {
+    grid-template-columns: 1fr;
+    gap: 0;
     max-width: 100%;
-    margin: 24px 0 0;
+    margin: 0;
+  }
+
+  .nocturne-summary > p {
+    margin-bottom: 28px;
+    padding-right: 0;
+  }
+
+  .nocturne-summary > div {
+    padding: 16px 0;
+    border-top: 1px solid rgba(13,13,12,.18);
+    border-left: 0;
   }
 
   .nocturne-editorial figure:nth-child(2) {
@@ -1949,6 +1966,7 @@ footer span:last-child {
   }
 
   .nocturne-heading h2 {
+    margin-top: 58px;
     font-size: clamp(54px, 16.8vw, 72px);
   }
 
@@ -1957,8 +1975,7 @@ footer span:last-child {
   }
 
   .nocturne-summary > div {
-    grid-template-columns: 84px 1fr;
-    gap: 12px;
+    padding: 14px 0;
   }
 
   .nocturne-hero {
