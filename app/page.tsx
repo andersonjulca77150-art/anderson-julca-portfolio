@@ -336,9 +336,6 @@ export default function Home() {
           <p>07 / WEB DESIGN / EXPERIENCE</p>
           <h2>MUSEO<br />EN <em>MOVIMIENTO</em></h2>
           <span>REDISEÑO CONCEPTUAL DEL MUSEO DE ARTE DE LIMA</span>
-          <a href="https://mali-museo-vivo.andersonj.chatgpt.site" target="_blank" rel="noreferrer">
-            VISITAR EXPERIENCIA <Arrow />
-          </a>
         </div>
         <div className="web-device reveal">
           <div className="browser-bar"><i /><i /><i /><span>mali.pe / conceptual</span></div>
